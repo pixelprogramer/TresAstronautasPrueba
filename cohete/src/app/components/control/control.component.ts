@@ -13,7 +13,11 @@ export class ControlComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.planeta =this.rutaActiva.snapshot.params.planeta;
+    if (this.rutaActiva.snapshot.params.planeta != undefined){
+      this.planeta =this.rutaActiva.snapshot.params.planeta;
+    }else{
+      this.planeta = 'X';
+    }
   }
 
 }

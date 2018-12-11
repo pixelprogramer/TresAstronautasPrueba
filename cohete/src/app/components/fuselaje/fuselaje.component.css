@@ -16,7 +16,12 @@
 .fuselaje{
   height: 600px
 }
-
+.llama{
+  height: 200px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -200px;
+}
 .rocket path {
   fill: white;
 }
